@@ -10,7 +10,7 @@
     
     <title>
         
-            hexo deploy指令没反应的解决方案 | 
+            href=&quot;#&quot;和href=&quot;###&quot;的区别 | 
         
         Suket&#39;s Blog
     </title>
@@ -32,7 +32,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Suket">
     <meta name="description" content="Suket&#39;s Blog">
-    <meta name="keywords" content="null">
+    <meta name="keywords" content="null,href="###"">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -58,9 +58,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://github.com/denamsoul/denamsoul.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="hexo deploy指令没反应的解决方案 | Suket&#39;s Blog">
+    <meta property="og:title" content="href=&quot;#&quot;和href=&quot;###&quot;的区别 | Suket&#39;s Blog">
     <meta property="og:description" content="Suket&#39;s Blog">
-    
+    <meta property="og:article:tag" content="href=&quot;###&quot;"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -284,7 +284,7 @@
         
     
             <p class="article-headline-p">
-                hexo deploy指令没反应的解决方案
+                href="#"和href="###"的区别
             </p>
         </div>
 
@@ -303,7 +303,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Suket</strong>
-        <span>4月 26, 2017</span>
+        <span>5月 06, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -327,7 +327,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        
+        <a class="post_tag-link" href="/tags/href/">href="###"</a>
     </ul>
     
 
@@ -343,7 +343,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=hexo deploy指令没反应的解决方案&url=https://github.com/denamsoul/denamsoul.github.io//2017/04/26/解决hexo deploy没反应/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=href=&quot;#&quot;和href=&quot;###&quot;的区别&url=https://github.com/denamsoul/denamsoul.github.io//2017/05/06/xxx/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -352,7 +352,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=hexo deploy指令没反应的解决方案&url=https://github.com/denamsoul/denamsoul.github.io//2017/04/26/解决hexo deploy没反应/index.html&via=Suket" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=href=&quot;#&quot;和href=&quot;###&quot;的区别&url=https://github.com/denamsoul/denamsoul.github.io//2017/05/06/xxx/index.html&via=Suket" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -361,7 +361,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/denamsoul/denamsoul.github.io//2017/04/26/解决hexo deploy没反应/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/denamsoul/denamsoul.github.io//2017/05/06/xxx/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -370,7 +370,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://github.com/denamsoul/denamsoul.github.io//2017/04/26/解决hexo deploy没反应/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://github.com/denamsoul/denamsoul.github.io//2017/05/06/xxx/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -394,16 +394,8 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>##今天在更新hexo的时候遇到的一个问题<br><code></code></p>
-<pre><code>hexo g //页面生成成功
+        <p>&nbsp; &nbsp; &nbsp;首先，&lt;a&gt; 标签 + onclick=’{jscode}’ 是很常用的一种 js 运用方式，而不使用 href=’javascript:{jscode}’ 是为了兼容多种浏览器对 &lt;a&gt; 标签的解释和处理不同。其次，使用 &lt;a&gt; 标签 + onclick=’{jscode}’&nbsp; 时经常会加一个 href=’###’，而有时这个 href=’###’ 会被误写为 &lt;a href=’#’&gt; 是因为使用者没有理解 ‘#’ 和 ‘###’ 的区别。</p><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;简单地说，就是说如果想定义一个空的链接，又不跳转到页面头部，可以写href=”###”。详细解释就是’#’ 是有特定意义的，如果 ‘#’ 后有内容会被认为是一个标签而从页面找到相应标签跳转到该处，找不到时会跳到页首， ‘###’ 其实就是一个无意义的标签指定，也就是一个 ‘#’ 和不存在的标签 ‘##’ 的组合，页面中找不到命名为 ‘##’ 的 &lt;a&gt; 时该链接就不会发生跳转，也就不会导致执行 onclick 中的内容时突然发生页面跳到页首的问题。’###’ 只是一种使用者习惯，如果你愿意，可以随便找一个跳转不到的标签作为命名。说白了”###” 就是一个不是锚点的字符串 浏览器找不到也不会跳到页首，原理就是依赖了网页的报错机制，找不到就不做处理。</p><br><p>&nbsp;&nbsp;&nbsp;&nbsp; 有些人说，不喜欢&ldquo;###&rdquo;因为他会改变链接。都是使用一直用javascript:void(0)或者javascript:。href=”javascript:void(0);”但也有人说用href=”javascript:void(0);”可能会有浏览器兼容问题。在做页面时，如果想做一个链接点击后不做任何事情，或者响应点击而完成其他事情，可以设置其属性 href = “#”，但是，这样会有一个问题，就是当页面有滚动条时，点击后会返回到页面顶端，用户体验不好。</p><br><p>&nbsp;&nbsp;&nbsp;&nbsp; javascript:void(0)这种伪协议，少写的好，如果你看过一些web标准的书就知道为什么了。 2.链接（href）直接使用javascript:void(0)在IE中可能会引起一些问题，比如：造成gif动画停止播放等，所以，最安全的办法还是使用&ldquo;####&rdquo;。为防止点击链接后跳转到页首，onclick事件return false即可。</p>
 
- hexo deploy //无反应 无报错 
-</code></pre><p><br>   解决方案：检查_config.yml<br>    注意deploy跟下面三个属性的上下级关系要用两个空格隔开，注意每个属性值（比如type:)<br>后面一定要留一个空格</p>
-<pre><code>deploy:
- (空格*2)type:(空格)git
- (空格*2)repo:(空格)git@github.com:denamsoul/denamsoul.github.io.git
- (空格*2)branch:(空格)master
-</code></pre>
     
 
     
@@ -429,21 +421,13 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/05/06/xxx/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2017/04/24/关于cordova打包App报错：Execution-failed-for-task-processDebugResources/" id="post_nav-older" class="next-content">
+        <a href="/2017/04/26/解决hexo deploy没反应/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
