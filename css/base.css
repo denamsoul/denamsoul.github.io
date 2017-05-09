@@ -1,0 +1,53 @@
+body {
+  background: url("../images/main-bg.jpg");
+}
+.wrapper {
+  margin: 15px auto;
+  color: #fff;
+}
+.mynav {
+  margin-top: 16px;
+  background: #f4d03f;
+  padding: 0;
+}
+.mynav a {
+  width: 100%;
+  text-align: right;
+  color: #111;
+  line-height: 3rem;
+}
+.mynav a:hover {
+  background: #111;
+}
+.main {
+  background: #fff;
+  margin-top: 16px;
+  color: #111;
+  display: none;
+  border-radius: 2px;
+}
+.main .panel-body {
+  padding: 0 2rem;
+}
+.progress-bar {
+  background-color: #f4d03f;
+}
+#HOME {
+  display: block;
+}
+.group {
+  width: 70%;
+  padding: 2rem;
+}
+.hd {
+  display: none;
+}
+.tab-pane {
+  padding: 2rem;
+}
+.personal-info span {
+  padding-left: 1rem;
+}
+#sumary p {
+  text-indent: 2rem;
+}
